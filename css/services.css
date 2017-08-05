@@ -1,0 +1,47 @@
+.service{
+	margin-bottom: 40px;
+}
+
+.service-one{
+	margin-bottom: 20px;
+}
+
+.service-pic img, .service-one img{
+	width: 100%;
+}
+
+.service p, .service-one p{
+	margin-bottom: 20px;
+}
+
+.service-price{
+	font-size: 16px;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: bold;
+	color: #181310;
+	padding: 10px;
+	border: 2px solid #181310;
+
+}
+
+.service-price:hover{
+	color: #F3F3F2;
+	background-color: #181310; 
+	text-decoration: none;
+}
+
+#requirements{
+	margin-top: 10px;
+}
+
+.requirement-link{
+	color: #181310;
+	font-weight: bold;
+
+}
+
+.requirement-link:hover, .requirement-link:active, .requirement-link:visited{
+	color: #ec7d31;
+	text-decoration: none;
+	cursor: pointer;
+}

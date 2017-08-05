@@ -1,0 +1,271 @@
+/* << fonts */
+
+/*@font-face {
+			font-family: "RalewayRegular";
+			src: url("../fonts/RalewayRegular/RalewayRegular.eot");
+			src: url("../fonts/RalewayRegular/RalewayRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"),
+			url("../fonts/RalewayRegular/RalewayRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}*/
+
+
+@font-face {
+			font-family: "RalewayMedium";
+			src: url("../fonts/RalewayMedium/RalewayMedium.eot");
+			src: url("../fonts/RalewayMedium/RalewayMedium.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/RalewayMedium/RalewayMedium.woff") format("woff"),
+			url("../fonts/RalewayMedium/RalewayMedium.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+/*@font-face {
+			font-family: "RalewaySemiBold";
+			src: url("../fonts/RalewaySemiBold/RalewaySemiBold.eot");
+			src: url("../fonts/RalewaySemiBold/RalewaySemiBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/RalewaySemiBold/RalewaySemiBold.woff") format("woff"),
+			url("../fonts/RalewaySemiBold/RalewaySemiBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+@font-face {
+			font-family: "RalewayBold";
+			src: url("../fonts/RalewayBold/RalewayBold.eot");
+			src: url("../fonts/RalewayBold/RalewayBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/RalewayBold/RalewayBold.woff") format("woff"),
+			url("../fonts/RalewayBold/RalewayBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}*/
+
+
+/* fonts >>*/
+
+
+/* << base styles */
+
+body {
+    padding-top: 100px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: #F3F3F2;
+    font-family: 'Helvetica', sans-serif;
+    color: #181310;
+}
+
+h1{
+	font-size: 36px;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: bold;
+}
+
+hr{
+	border-top: 1px solid #181310;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+/* base styles >>*/
+
+/* << header */
+
+#navbar-fox{
+	background-color: #ec7d31;	
+}
+
+#navbar-fox a{
+	color: #181310;
+	font-family: "RalewayMedium", sans-serif;
+	font-weight: bold;
+
+}
+
+#navbar-fox .logo{
+	height: 100%;
+}
+
+#navbar-fox .icon-bar hr{
+	border-color: #181310;
+	border-width: 1px;
+	margin-top: 3px;
+}
+
+#navbar-fox .head-menu li a{
+	font-size: 18px;
+} 
+
+.navbar-brand{
+	height: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 15px;
+}
+
+.navbar-toggle{
+	border: 1px solid #181310;
+	margin-top: 31px;
+}
+
+.navbar-nav{
+	margin: 0px -15px; 
+}
+
+#navbar-fox .navbar-nav-link:active, #navbar-fox .active, #navbar-fox .navbar-nav-link:hover, #navbar-fox .navbar-nav-link:visited{
+	background-color: #FF9C59;
+}
+
+.social-device, .social-full-size{
+ 	position: relative;
+	float: right;
+	display: inline-block;
+	
+}
+.social-full-size{
+	margin-top: 32px;
+}
+.social-device {
+	margin-right: 20px;
+	margin-top: 35px;
+	display: none;
+}
+.social-device a, .social-full-size a{	
+	margin-left: 15px;
+}
+.social-device img, .social-full-size img{
+	width: 30px;	
+}
+
+/* header >> */
+
+/* << body */
+
+.page-header{
+	padding-bottom: 0 !important;
+	margin: 20px 0;
+}
+
+.img-responsive{
+	width: 100%;
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+    background-image: url("../img/default_service.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    min-height: 400px;
+    display: block;
+}
+
+.portfolio-item .textbox{
+ 	padding: 10px 20px;
+ 	background-color: rgba(255, 255, 255, 0.6);
+	position: absolute;
+    top: 40%;
+    vertical-align: middle;
+}
+
+.portfolio-item:hover .textbox{
+ 	background-color: rgba(236, 125, 49, 0.8);
+}
+
+.portfolio-item .textbox .service-name{
+	color: #181310;
+	font-weight: bold;
+	font-size: 36px;
+	font-family: sans-serif;
+}
+
+.portfolio-item:hover .textbox .service-name{
+ 	color: black;
+}
+
+/*.price-table-container .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #FFDDC6;
+}*/
+
+
+/* body >>*/
+
+/* << footer */
+
+footer {
+    margin: 50px 0;
+}
+
+.contact-map {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 200px;
+        overflow: hidden;
+}
+
+.contact-map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+}
+
+@media (min-width: 768px) {
+	.navbar-nav > li > a {
+    	padding-top: 40px;
+    	padding-bottom: 40px;
+    	padding-left: 25px;
+    	padding-right: 25px;
+	}
+
+	.portfolio-item {
+    	min-height: 400px;
+	}
+}
+
+ 
+@media (max-width: 767px){
+	.social-device {
+    	display: inline-block;
+	}
+
+	.social-full-size{
+		display: none;
+	}
+
+	#navbar-fox .head-menu li a{
+		font-size: 14px;
+	} 
+
+	.portfolio-item {
+    	min-height: 300px;
+	}
+}
+
+@media (max-width: 400px){
+
+	h1{
+		font-size: 24px;
+	}
+
+	hr{
+		margin-bottom: 15px;
+	}
+
+	.page-header{
+		margin: 15px 0;
+	}
+
+	.portfolio-item {
+    	min-height: 200px;
+	}
+
+	.portfolio-item .textbox{
+ 		padding: 10px;
+	}
+
+	.portfolio-item .textbox .service-name{
+		font-size: 24px;
+	}
+
+}
