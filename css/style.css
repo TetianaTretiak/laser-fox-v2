@@ -59,8 +59,7 @@
 /* << base styles */
 
 body {
-
-    padding-top: 150px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    
     background-color: #fcfcfc;
     font-family: 'Helvetica', sans-serif;
     color: #181310;
@@ -107,22 +106,23 @@ hr{
 	font-size: 18px;
 } 
 
-.navbar-brand{
+.navbar-brand-fox{
 	height: 100px;
 	padding: 0 !important;
 	margin-right: 60px;
 	margin-top: -20px;
 	margin-left: 0 !important; 
-	/*padding-top: 10px;*/
-	/*padding-bottom: 10px;*/
 }
 
-.navbar-brand:hover{
+.navbar-brand-fox:hover{
 	background-color: #fcfcfc !important;
 }
+
 .navbar-toggle{
 	border: 1px solid #181310;
-	margin-top: 31px;
+	padding: 7px 7px;
+	margin-right: 0;
+	float: right;
 }
 
 .navbar-nav{
@@ -137,6 +137,10 @@ hr{
 	background-color: #fcfcfc;
 	border-bottom: solid 4px #E26404;
 }
+
+.logo-wide-img{
+		height: 43px;
+	}	
 
 .social-full-size{
 		text-align: right;
@@ -245,7 +249,14 @@ footer {
 		padding-top: 20px;
     	padding-bottom: 20px;
 	}
-	
+
+	.mobile-container{
+		display: none;		
+	}
+
+	.fox-logo{
+		display: block;
+	}
 
 	.container-main{
 		padding-left: 150px;
@@ -282,17 +293,39 @@ footer {
 
  
 @media (max-width: 767px){
+	body{
+		padding-top: 150px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	}
+
 	.social-device {
     	display: inline-block;
 	}
 
-	.social-full-size{
-		display: none;
+	.mobile-container{
+		display: block;		
+		padding-top: 18px;
+		padding-bottom: 20px;
+    	border-bottom: 1px solid;
+	}
+
+	.social-full-size, .fox-logo{
+		display: none !important;
 	}
 
 	#navbar-fox .head-menu li a{
 		font-size: 14px;
 	} 
+
+	#navbar-fox .navbar-nav-link{
+		border-right: solid 4px #181310;
+		border-bottom: none;
+	}
+
+	#navbar-fox .navbar-nav-link:active, #navbar-fox .active, #navbar-fox .navbar-nav-link:hover{
+		background-color: #fcfcfc;
+		border-right: : solid 4px #E26404;
+		border-bottom: none;
+	}
 
 	.portfolio-item {
     	min-height: 300px;
@@ -300,6 +333,9 @@ footer {
 }
 
 @media (max-width: 400px){
+	body{
+		padding-top: 100px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	}
 
 	h1{
 		font-size: 24px;
