@@ -49,12 +49,20 @@
             <!-- </div> -->
             <div class="social-full-size" id="social-full-size">
                     <div class="fast-contacts" style="float: left;text-align: left;">
-                    <span><i class="glyphicon glyphicon-phone"></i> +380939999999</span>
-                    <br>
-                    <span><i class="glyphicon glyphicon-envelope"></i> laserfox@gmail.com</span>    
+                        <span>
+                            <i class="glyphicon glyphicon-phone"></i> <a href="tel:+380939999999" class="contact-link">+380939999999</a>
+                            </span>
+                        <br>
+                        <span>
+                            <i class="glyphicon glyphicon-envelope"></i> <a href="#" class="contact-link">laserfox@gmail.com</a>
+                        </span>    
                     </div>
-                    <a href="#" title="Наша страница в Instagram"><img src="img/instagram.png" alt="Instagram" /></a>
-                    <a href="https://www.facebook.com/groups/1478950632161188/" target="_blank" title="Наша страница на Facebook"><img src="img/facebook.png" alt="Facebook" /></a>
+                    <a href="#" title="Наша страница в Instagram" class="socials instagram">
+                        <!-- <img src="img/instagram.png" alt="Instagram" /> -->
+                    </a>
+                    <a href="https://www.facebook.com/groups/1478950632161188/" class="socials facebook" target="_blank" title="Наша страница на Facebook">
+                        <!-- <img src="img/facebook.png" alt="Facebook" /> -->
+                    </a>
             </div> 
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -90,9 +98,25 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container container-main">
+        <h1>
+            Контакты
+        </h1>
+        <div>
+            Время работы:<br>
+                пн-пт: 09:00 - 18:00<br>
+                сб: 10:00 - 17:00<br>
+                вс: выходной<br>
+                <br>
+            <span>
+                Контактный телефон: <a href="tel:+380939999999" class="contact-link">+380939999999</a>
+            </span>
+            <br>
+            <span>
+                E-mail: <a href="#" class="contact-link">laserfox@gmail.com</a>
+            </span> 
+        </div>
 
-        <hr>
         <div class="contact-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.5926960599454!2d30.627526715246056!3d50.46730889403172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d006112b8bab%3A0x81985c5341c5e915!2sNirvana+Pub!5e0!3m2!1sen!2s!4v1499107126649" width="1270" height="200" frameborder="0" style="border:0" allowfullscreen=""></iframe>
         </div>
@@ -115,6 +139,26 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
+
+    <script type="text/javascript">
+        var oldScrollY = 0;
+
+        window.onscroll = function() {
+          var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+          var dY = scrolled - oldScrollY;
+          
+          if (dY > 20 && $('.mobile-container').css('display') == 'none'){
+            $('.social-full-size').hide();
+            $('#fox-menu').css('padding-top', '40px');
+          } else if ($('.mobile-container').css('display') == 'none') {
+            $('#fox-menu').css('padding-top', '20px');
+            $('.social-full-size').show();
+          }
+          
+          oldScrollY = scrolled;
+        }
+
+    </script>
 
 </body>
 

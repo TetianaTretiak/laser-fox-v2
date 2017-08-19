@@ -155,20 +155,29 @@ hr{
 	display: inline-block;
 }	
 
-.social-device a, .social-full-size a{	
+.social-full-size .a{	
 	margin-left: 15px;
 }
-.social-device img, .social-full-size img{
-	width: 25px;	
+.social-full-size .socials{
+	display: inline-block;
+	width: 25px;
+	height: 25px;	
 }
 
-.social-device{
- 	position: relative;
-	float: right;
-	display: inline-block;
-	margin-right: 20px;
-	margin-top: 35px;
-	display: none;
+.social-full-size .instagram{
+	background-image: url("../img/social.png");
+	background-position: 66% 0%;
+}
+.social-full-size .instagram:hover{
+	background-position: 100% 0%;
+}
+
+.social-full-size .facebook{
+	background-image: url("../img/social.png");
+	background-position: 0% 0%;
+}
+.social-full-size .facebook:hover{
+	background-position: 33% 0%;
 }
 
 .contact-link{
@@ -240,7 +249,7 @@ footer {
 
 .contact-map {
         position: relative;
-        padding-bottom: 75%; // This is the aspect ratio
+        padding-bottom: 50%; 
         height: 200px;
         overflow: hidden;
 }

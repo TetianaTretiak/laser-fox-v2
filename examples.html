@@ -52,12 +52,20 @@
             <!-- </div> -->
             <div class="social-full-size" id="social-full-size">
                     <div class="fast-contacts" style="float: left;text-align: left;">
-                    <span><i class="glyphicon glyphicon-phone"></i> +380939999999</span>
-                    <br>
-                    <span><i class="glyphicon glyphicon-envelope"></i> laserfox@gmail.com</span>    
+                        <span>
+                            <i class="glyphicon glyphicon-phone"></i> <a href="tel:+380939999999" class="contact-link">+380939999999</a>
+                            </span>
+                        <br>
+                        <span>
+                            <i class="glyphicon glyphicon-envelope"></i> <a href="#" class="contact-link">laserfox@gmail.com</a>
+                        </span>    
                     </div>
-                    <a href="#" title="Наша страница в Instagram"><img src="img/instagram.png" alt="Instagram" /></a>
-                    <a href="https://www.facebook.com/groups/1478950632161188/" target="_blank" title="Наша страница на Facebook"><img src="img/facebook.png" alt="Facebook" /></a>
+                    <a href="#" title="Наша страница в Instagram" class="socials instagram">
+                        <!-- <img src="img/instagram.png" alt="Instagram" /> -->
+                    </a>
+                    <a href="https://www.facebook.com/groups/1478950632161188/" class="socials facebook" target="_blank" title="Наша страница на Facebook">
+                        <!-- <img src="img/facebook.png" alt="Facebook" /> -->
+                    </a>
             </div> 
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -82,11 +90,8 @@
                     <li>
                         <a href="contacts.html" class="navbar-nav-link">Контакты</a>
                     </li>
-                </ul>
-
-               
+                </ul>               
             </div>
-
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
@@ -173,7 +178,25 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
 
-    <!-- <div>Test block to test page reloading.</div> -->
+    <script type="text/javascript">
+        var oldScrollY = 0;
+
+        window.onscroll = function() {
+          var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+          var dY = scrolled - oldScrollY;
+          
+          if (dY > 20 && $('.mobile-container').css('display') == 'none'){
+            $('.social-full-size').hide();
+            $('#fox-menu').css('padding-top', '40px');
+          } else if ($('.mobile-container').css('display') == 'none') {
+            $('#fox-menu').css('padding-top', '20px');
+            $('.social-full-size').show();
+          }
+          
+          oldScrollY = scrolled;
+        }
+
+    </script>
 
 </body>
 
