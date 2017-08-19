@@ -21,16 +21,6 @@
 			font-weight: normal;
 	}
 
-/*@font-face {
-			font-family: "RalewaySemiBold";
-			src: url("../fonts/RalewaySemiBold/RalewaySemiBold.eot");
-			src: url("../fonts/RalewaySemiBold/RalewaySemiBold.eot?#iefix")format("embedded-opentype"),
-			url("../fonts/RalewaySemiBold/RalewaySemiBold.woff") format("woff"),
-			url("../fonts/RalewaySemiBold/RalewaySemiBold.ttf") format("truetype");
-			font-style: normal;
-			font-weight: normal;
-	}
-*/
 
 @font-face {
 			font-family: "RalewayLight";
@@ -58,8 +48,7 @@
 
 /* << base styles */
 
-body {
-    
+body {    
     background-color: #fcfcfc;
     font-family: 'Helvetica', sans-serif;
     color: #181310;
@@ -68,7 +57,14 @@ body {
 h1{
 	font-size: 26px;
 	font-family: 'Helvetica', sans-serif;
-	font-weight: bold;
+}
+
+h1 a{
+	color: #181310; 
+}
+
+h1 a:hover{
+	color: #e26404; 
 }
 
 hr{
@@ -89,7 +85,6 @@ hr{
 	color: #181310;
 	font-family: "RalewayRegular", sans-serif;
 	font-weight: bold;
-
 }
 
 #navbar-fox .logo{
@@ -195,7 +190,8 @@ hr{
 
 .page-header{
 	padding-bottom: 0 !important;
-	margin: 20px 0;
+	margin: 20px 0 15px 0;
+	font-weight: normal;
 }
 
 .img-responsive{
@@ -265,7 +261,7 @@ footer {
 @media (min-width: 768px) {
 
 	body{
-		padding-top: 150px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+		padding-top: 180px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 	}
 
 	#fox-menu{
@@ -348,6 +344,7 @@ footer {
 		background-color: #fcfcfc;
 		border-right: : solid 4px #E26404;
 		border-bottom: none;
+		color: #E26404;
 	}
 
 	.portfolio-item {
