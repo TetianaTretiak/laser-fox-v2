@@ -216,8 +216,12 @@ hr{
     vertical-align: middle;
 }
 
+.portfolio-item:hover{
+	filter: grayscale(100%);
+}
+
 .portfolio-item:hover .textbox{
- 	background-color: rgba(236, 125, 49, 0.8);
+ 	background-color: rgba(252, 252, 252, 0.95);
 }
 
 .portfolio-item .textbox .service-name{
