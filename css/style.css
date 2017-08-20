@@ -342,7 +342,7 @@ footer {
 
 	#navbar-fox .navbar-nav-link:active, #navbar-fox .active, #navbar-fox .navbar-nav-link:hover{
 		background-color: #fcfcfc;
-		border-right: : solid 4px #E26404;
+		border-right: solid 4px #E26404;
 		border-bottom: none;
 		color: #E26404;
 	}
