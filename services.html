@@ -178,22 +178,18 @@
     <script src="js/bootstrap.js"></script>
 
     <script type="text/javascript">
-        var oldScrollY = 0;
-
-        window.onscroll = function() {
-          var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-          var dY = scrolled - oldScrollY;
-          
-          if (dY > 20 && $('.mobile-container').css('display') == 'none'){
-            $('.social-full-size').hide();
-            $('#fox-menu').css('padding-top', '40px');
-          } else if ($('.mobile-container').css('display') == 'none') {
-            $('#fox-menu').css('padding-top', '20px');
-            $('.social-full-size').show();
-          }
-          
-          oldScrollY = scrolled;
-        }
+        $(window).scroll(function() {
+            if ($('.mobile-container').css('display') == 'none'){
+                if ($(this).scrollTop() > 50) {
+                    $('.social-full-size').hide();
+                    $('#fox-menu').css('padding-top', '40px');
+                }
+                if ($(this).scrollTop() < 50) {
+                    $('#fox-menu').css('padding-top', '20px');
+                    $('.social-full-size').show();
+                }
+            }
+        });
 
     </script>
 
