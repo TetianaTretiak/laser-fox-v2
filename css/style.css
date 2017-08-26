@@ -308,6 +308,14 @@ footer {
     	min-height: 300px;
 	}
 
+	#myCarousel .mobile-slider-pic{
+		display: none;
+	}
+
+	#myCarousel .slider-pic{
+		display: block;
+	}
+
 }
 
  
@@ -345,6 +353,18 @@ footer {
 		border-right: solid 4px #E26404;
 		border-bottom: none;
 		color: #E26404;
+	}
+
+	#myCarousel{
+		height: 200px;
+	}
+
+	#myCarousel .mobile-slider-pic{
+		display: block;
+	}
+
+	#myCarousel .slider-pic{
+		display: none;
 	}
 
 	.portfolio-item {
