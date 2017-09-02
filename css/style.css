@@ -234,13 +234,19 @@ hr{
  	color: black;
 }
 
+.carousel-inner a:hover, .carousel-inner a:visited{
+	text-decoration: none;
+}
+
+
+
 
 /* body >>*/
 
 /* << footer */
 
 footer {
-    margin: 50px 0;
+    margin: 30px 0;
 }
 
 .contact-map {
@@ -316,6 +322,20 @@ footer {
 		display: block;
 	}
 
+	.test-banner{
+		height: 270px;
+		font-family: 'RalewayMedium';
+		font-size: 48px;
+		color: black;
+		text-align: center;
+		vertical-align: middle;
+		padding: 30px;
+	}
+
+	.test-banner:hover{
+		text-decoration: none;
+	}	
+
 }
 
  
@@ -369,6 +389,20 @@ footer {
 
 	.portfolio-item {
     	min-height: 300px;
+	}
+
+	.test-banner{
+		height: 200px;
+		font-family: 'RalewayMedium';
+		font-size: 32px;
+		color: black;
+		text-align: center;
+		vertical-align: middle;
+		padding: 25px;
+	}
+
+	.test-banner:hover{
+		text-decoration: none;
 	}
 }
 
