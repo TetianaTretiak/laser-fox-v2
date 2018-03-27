@@ -25,7 +25,6 @@
 	color: #181310;
 	padding: 10px;
 	border: 2px solid #181310;
-
 }
 
 .service-price:hover{
@@ -48,4 +47,8 @@
 	color: #ec7d31;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.price-to-talk{
+	font-weight: bold;
 }
