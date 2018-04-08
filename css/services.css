@@ -52,3 +52,7 @@
 .price-to-talk{
 	font-weight: bold;
 }
+
+.price-table-container li:not(.active) a{
+	color: #E26404;
+}

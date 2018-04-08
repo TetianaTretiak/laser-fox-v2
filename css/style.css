@@ -73,9 +73,11 @@ hr{
 	margin-bottom: 20px;
 }
 
+
 /* base styles >>*/
 
 /* << header */
+
 
 #navbar-fox{
 	background-color: #fcfcfc;	
@@ -241,8 +243,10 @@ hr{
 	text-decoration: none;
 }
 
-
-
+.ident, .service-description p{
+	text-indent: 1.5em;
+	text-align: justify;
+}
 
 /* body >>*/
 
